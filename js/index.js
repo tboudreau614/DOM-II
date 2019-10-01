@@ -60,7 +60,7 @@ elementsArray.forEach(function(buttonEdit1) {
 });
 
 window.addEventListener('load', (event) => {
-    console.log("Let's get it!");
+    alert("Let's get it!");
   });
 
 const changeItUp =
