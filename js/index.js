@@ -38,7 +38,7 @@ const boatImg =
 document.querySelector(".boat-picture");
 
 boatImg.addEventListener("drag", () => {
-    boatImg.style.opacity = "0.5";
+    boatImg.style.opacity = "0.1";
     boatImg.style.transition = "all 1.5s";
 });
 
@@ -48,3 +48,23 @@ document.querySelector(".text-content");
 makeRed.addEventListener("mouseover", () => {
     makeRed.style.color = "red";
 });
+
+let elementsArray = document.querySelectorAll(".btn");
+
+elementsArray.forEach(function(buttonEdit1) {
+    buttonEdit1.addEventListener("click", () => {
+        buttonEdit1.style.transform = "rotate(90deg)";
+        buttonEdit1.style.transition = "all 2s";
+    });
+});
+
+window.addEventListener('load', (event) => {
+    console.log("Let's get it!");
+  });
+
+const changeItUp =
+document.querySelector(".content-section");
+
+window.addEventListener('scroll', () => {
+    changeItUp.style.backgroundColor="pink"
+  })
