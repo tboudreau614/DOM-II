@@ -49,7 +49,8 @@ makeRed.addEventListener("mouseover", () => {
     makeRed.style.color = "red";
 });
 
-let elementsArray = document.querySelectorAll(".btn");
+let elementsArray = 
+document.querySelectorAll(".btn");
 
 elementsArray.forEach(function(buttonEdit1) {
     buttonEdit1.addEventListener("click", () => {
@@ -67,4 +68,20 @@ document.querySelector(".content-section");
 
 window.addEventListener('scroll', () => {
     changeItUp.style.backgroundColor="pink"
+  })
+
+const stopThat =
+document.querySelector(".content-section");
+
+stopThat.addEventListener('click', (elem) => {
+    elem.stopPropagation();
+  });
+
+let noGo = 
+  document.querySelector(".nav");
+
+
+noGo.addEventListener("click", (event) => {
+    console.log("stopped link");
+    event.preventDefault();
   })
